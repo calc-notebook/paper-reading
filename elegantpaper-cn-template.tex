@@ -1,0 +1,54 @@
+%!TEX program = xelatex
+% 完整编译: xelatex -> bibtex -> xelatex -> xelatex
+\documentclass[lang=cn,11pt,a4paper,cite=authoryear]{elegantpaper}
+
+\title{论文笔记}
+\author{Ethan DENG \\ Fudan University \and Dongsheng DENG \\ PA Technology}
+% \institute{\href{https://elegantlatex.org/}{Elegant\LaTeX{} 项目组}}
+
+\version{0.09}
+\date{\zhtoday}
+
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\begin{document}
+
+\maketitle
+
+% 论文内容总结
+\begin{abstract}
+本文为 \href{https://github.com/ElegantLaTeX/ElegantPaper/}{ElegantPaper} 的说明文档。
+\keywords{论文，模板}
+\end{abstract}
+
+
+\section{研究目的}
+
+% \begin{lstlisting}
+% \documentclass[a4paper,11pt]{elegantpaper}
+% \end{lstlisting}
+
+\section{方法论}
+
+
+\section{实验}
+
+
+\section{结论}
+
+
+\section{参考文献}
+
+
+
+\nocite{*}
+\bibliography{wpref}
+
+\appendix
+%\appendixpage
+\addappheadtotoc
+
+\end{document}
